@@ -1,24 +1,91 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Members-only
 
-Things you may want to cover:
+Created a members-only website where only members are allowed to create posts and see the author of the post, guests are allowed to see all posts but not the author of the post.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- Active Record
+- Bootstrap 4
+- Ruby
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy of the repository please run the following commands on your terminal:
 
-* Database initialization
+```
+$ cd <folder>
+```
 
-* How to run the test suite
+```
+$ git clone git@github.com:garciajordy/members-only.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ cd members-only
+```
+> Install webpack
+```
+$ rails webpacker:install 
+```
 
-* Deployment instructions
+> Migrate the database
 
-* ...
+```
+$ rails db:migrate
+```
+
+> Run the rails server
+
+```
+$ rails server
+```
+
+> In order to see all posts with authors, create user:
+
+```
+$ http://localhost:3000/users/sign_up
+```
+
+> To edit an user, navigate to:
+
+```
+$ http://localhost:3000/users/edit
+```
+
+> In order to see all posts, navigate to:
+
+```
+$ http://localhost:3000
+```
+
+## AUTHOR
+
+👤 **Verissimo Henry**
+
+- GitHub: [@githubhandle](https://github.com/verissimohenry)
+- Twitter: [@twitterhandle](https://twitter.com/verissimohenry)
+- LinkedIn: Linkedin: [linkedin](https://www.linkedin.com/in/henry-verissimo-618906167/)
+
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## License
+
+- This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+- This project is [creativecommons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
