@@ -20,7 +20,7 @@ $ cd <folder>
 ```
 
 ```
-$ git clone git@github.com:garciajordy/members-only.git
+$ git clone git@github.com:verissimohenry/members-only.git
 ```
 
 ```
