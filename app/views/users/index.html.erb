@@ -1,8 +1,8 @@
 <div class="float-right">
   <% if signed_in? %>
-    <%= link_to "(#{current_user.name}) Sign out", signout_path, method: "delete" %>
+    <%= link_to "(#{current_user.email}) Sign out", destroy_user_session_path, method: "delete" %>
   <% else %>
-    <%= link_to 'Sign in', signin_path %>
+    <%= link_to 'Sign in', new_user_session_path %>
   <% end %>
 </div>
 <h1>Members Only Posts</h1>
@@ -10,7 +10,7 @@
   <% if signed_in? %>
     <p class="float-right">
       Posted by:
-      <%= post.user.name %>
+      <%= post.user.email %>
     </p>
   <% end %>
   <h4 class="float-left"><%=post.title %></h4>
